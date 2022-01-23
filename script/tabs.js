@@ -5,7 +5,6 @@ const tabsFunc = () => {
     const tabsPrice = document.querySelector('.card-details__price')
     const tabsImage = document.querySelector('.card__image_item')
     const tabsMemory = document.querySelector('.description__memory')
-    const tabsTittlePage = document.title;
 
     const tabsOptions = [
         {
@@ -35,7 +34,7 @@ const tabsFunc = () => {
 
         tabsMemory.textContent = `Встроенная память (ROM) ${tabsOptions[index].memory} ГБ`
 
-        tabsTittlePage.textContent =`${tabsOptions[index].name}`
+        document.title =`${tabsOptions[index].name}`
     }
 
     const changeActiveTabs = (indexClickedTab) => {
